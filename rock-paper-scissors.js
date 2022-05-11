@@ -1,5 +1,6 @@
 function computerPlay() {
     // return randomly rock, paper or scissors
+    return 'rock';
 }
 
 function playRound(playerSelection, computerSelection) {
