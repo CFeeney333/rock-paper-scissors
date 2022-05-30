@@ -15,6 +15,7 @@ function playRound(e) {
   if (computerScore === 5 || playerScore === 5) {
     reset();
     playRound(e);
+    return;
   }
 
   const playerSelection = e.target.id;
