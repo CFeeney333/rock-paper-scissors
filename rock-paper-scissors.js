@@ -41,7 +41,8 @@ function playRound(e) {
 
     message.textContent = `You Win! ${playerSelection} beats ${computerSelection}`;
     if (playerScore === 5) {
-      winnerArea.textContent = "you win";
+      winnerArea.textContent = "You Win! :)";
+      winnerArea.classList.add("win");
       // alert("You Win!");
     }
   } else {
@@ -50,7 +51,8 @@ function playRound(e) {
 
     message.textContent = `You Lose! ${computerSelection} beats ${playerSelection}`;
     if (computerScore === 5) {
-      winnerArea.textContent = "computer wins";
+      winnerArea.textContent = "Computer Wins :(";
+      winnerArea.classList.add("lose");
       // alert("computer wins!");
     }
   }
@@ -81,4 +83,7 @@ function reset() {
   updateScores();
   message.textContent = "Make a play to start";
   winnerArea.textContent = "";
+  winnerArea.classList.forEach((cls) => {
+    winnerArea.classList.remove(cls);
+  });
 }
