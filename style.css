@@ -1,0 +1,61 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #a8d6c1;
+    background-color: #123456;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+h1 {
+    align-self: center;
+    text-decoration: underline;
+
+}
+
+.win {
+    background-color: #00ff0044;
+}
+
+.lose {
+    background-color: #ff000044;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    font-size: 24px;
+}
+
+#play-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #ffffff18;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 0;
+}
+
+#winner {
+    align-self: stretch;
+    padding: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
